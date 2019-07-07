@@ -24,10 +24,10 @@ class ItemsContainer extends Component {
         console.log(this.props.cards.cardList)
 
         return (
-            <div>
-            <Search key={''}  keywords={this.getKeywords} />
-            <CardList jsoncards={this.props.cards.cardList}/>
-            </div>
+            <section>
+                <Search key={''}  keywords={this.getKeywords} />
+                <CardList jsoncards={this.props.cards.cardList}/>
+            </section>
         )
     }
 }

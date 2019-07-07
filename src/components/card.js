@@ -1,6 +1,6 @@
 import React from 'react';
 
-//imports
+//import custom components
 import Title from './title'
 import Tag from './tag'
 

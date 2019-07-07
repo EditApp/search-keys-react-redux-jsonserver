@@ -1,6 +1,6 @@
 import React from 'react';
 
-//imports
+//import custom components
 import SearchIcon from './Icons/searchIcon'
 import SearchButton from './button'
 
