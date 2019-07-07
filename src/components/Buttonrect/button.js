@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './buttonrect.module.css'
 
 const SearchButton = (props) => {
     return (
-        <div style={{border: '1px solid grey', padding: '10px', width: '40px',height: '40px', display:'inline-block'}} >
+        <div className={styles.searchbtn} >
             {props.children}
         </div>
     )

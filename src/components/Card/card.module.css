@@ -1,0 +1,7 @@
+.card {
+    border: 1px solid #F0F0F0;
+    padding: 20px;
+    -webkit-box-shadow: 0 15px 60px 0 #F5F5F5;
+    box-shadow: 0 15px 60px 0 #F5F5F5;
+    margin: 20px 0;
+}

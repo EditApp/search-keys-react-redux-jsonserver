@@ -1,12 +1,13 @@
 import React from 'react';
+import styles from './card.module.css';
 
 //import custom components
-import Title from './title'
-import Tag from './tag'
+import Title from '../Title/title'
+import Tag from '../Tag/tag'
 
 const Card = ({title, mapthetags}) => {
     return (
-        <div className="card" style={{border: '1px solid grey', padding: '20px'}}>
+        <div className={styles.card}>
             <Title label={title}/>
             {mapthetags.map(datatags => {
                 return <Tag key={`id-${datatags}`} singletag={datatags}/>;

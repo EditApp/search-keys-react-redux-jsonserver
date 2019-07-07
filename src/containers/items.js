@@ -3,12 +3,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { cardsListAll, cardsFilter } from '../actions';
 import { bindActionCreators } from 'redux';
+import styles from './containers.module.css';
 
-
+//Imports custom components
 import CardList from '../containers/cardlist'
-
-
-import Search from '../components/search';
+import Search from '../components/Search/search';
 
 class ItemsContainer extends Component {
 
@@ -21,10 +20,8 @@ class ItemsContainer extends Component {
     }
 
     render(){
-        console.log(this.props.cards.cardList)
-
         return (
-            <section>
+            <section className={styles.wrapper}>
                 <Search key={''}  keywords={this.getKeywords} />
                 <CardList jsoncards={this.props.cards.cardList}/>
             </section>
