@@ -9,7 +9,7 @@ const Card = ({title, mapthetags}) => {
         <div className="card" style={{border: '1px solid grey', padding: '20px'}}>
             <Title label={title}/>
             {mapthetags.map(datatags => {
-                return <Tag singletag={datatags}/>;
+                return <Tag key={`id-${datatags}`} singletag={datatags}/>;
             })}
         </div>
     )

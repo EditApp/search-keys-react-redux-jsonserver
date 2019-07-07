@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 import { connect } from 'react-redux';
 import { cardsListAll } from '../actions';
@@ -10,40 +9,24 @@ import CardList from '../containers/cardlist'
 
 
 import Search from '../components/search';
-import Card from '../components/card';
 
 class ItemsContainer extends Component {
 
-    // state = {
-    //     items: []
-    // }
     componentWillMount() {
-        //getting data from json-server using axios
-        // axios.get("http://localhost:3004/cardsdata")
-        // .then(response => {
-        //     this.setState({
-        //         items: response.data
-        //     })
-        //     console.log(this.state.items)
-        // })
+        this.props.cardsListAll();
     }
     getKeywords = (event) => {
         let key = event.target.value;
-        console.log(key)
+        this.props.cardsList(key)
     }
 
     render(){
-        // const {items} = this.state;
+        console.log(this.props.cards.cardList)
+
         return (
             <div>
-            <Search  keywords={this.getKeywords} />
-            {/* <CardList>
-                { items && items.length != -1 ?
-                    items.map( carditem => (
-                        <Card title={carditem.name} mapthetags={carditem.tags} />
-                    )) : null
-                }
-            </CardList> */}
+            <Search key={''}  keywords={this.getKeywords} />
+            <CardList  jsoncards={this.props.cards.cardList}/>
             </div>
         )
     }
@@ -62,4 +45,3 @@ function mapDispatchToProps(dispatch){
 
 
 export default connect(mapStateToProps,mapDispatchToProps)(ItemsContainer)
-// export default ItemsContainer

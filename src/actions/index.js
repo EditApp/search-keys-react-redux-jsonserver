@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:3004/';
+const URL = 'http://localhost:3004';
 
 export function cardsListAll() {
     const request = axios.get(`${URL}/cardsdata`)

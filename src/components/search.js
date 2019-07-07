@@ -10,7 +10,7 @@ const Search = (props) => {
             <h2> Search your items</h2>
             <label htmlFor="search">
             <SearchButton>
-                <SearchIcon />
+                <SearchIcon/>
             </SearchButton>
             </label>
             <input id="search" placeholder={'que cherchez-vous ?'} type="text" onChange={event => props.keywords(event)}/>
