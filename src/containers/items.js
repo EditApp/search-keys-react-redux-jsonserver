@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import { cardsListAll } from '../actions';
+import { cardsListAll, cardsFilter } from '../actions';
 import { bindActionCreators } from 'redux';
 
 
@@ -17,7 +17,7 @@ class ItemsContainer extends Component {
     }
     getKeywords = (event) => {
         let key = event.target.value;
-        this.props.cardsList(key)
+        this.props.cardsFilter(key)
     }
 
     render(){
@@ -26,7 +26,7 @@ class ItemsContainer extends Component {
         return (
             <div>
             <Search key={''}  keywords={this.getKeywords} />
-            <CardList  jsoncards={this.props.cards.cardList}/>
+            <CardList jsoncards={this.props.cards.cardList}/>
             </div>
         )
     }
@@ -40,7 +40,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-    return bindActionCreators({cardsListAll},dispatch)
+    return bindActionCreators({cardsListAll, cardsFilter},dispatch)
 }
 
 
