@@ -13,7 +13,7 @@ const Search = (props) => {
                     <SearchIcon/>
                 </SearchButton>
             </label>
-            <input className={styles.searchinput} id="search" placeholder={'que cherchez-vous ?'} type="text" onChange={event => props.keywords(event)}/>
+            <input className={styles.searchinput} id="search" placeholder={'Que cherchez-vous ?'} type="text" onChange={event => props.keywords(event)}/>
         </div>
     )
 }

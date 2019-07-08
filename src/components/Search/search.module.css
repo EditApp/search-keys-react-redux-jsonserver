@@ -6,7 +6,7 @@
 .searchinput {
     line-height: 60px;
     border: 0px solid transparent;
-    width: calc(100% - 32px);
+    width: calc(100% - 38px);
     position: relative;
     left: 26px;
     text-indent: 20px;
