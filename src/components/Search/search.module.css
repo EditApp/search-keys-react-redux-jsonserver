@@ -1,13 +1,16 @@
 .searchcontainer {
     border: 1px solid #A3A3A3;
-    padding: 0 10px;
+    margin: 0px 4px 12px 4px;
     position: relative;
 }
 .searchinput {
-    line-height: 60px;
+    line-height: 52px;
     border: 0px solid transparent;
-    width: calc(100% - 38px);
+    width: calc(100% - 56px);
     position: relative;
     left: 26px;
     text-indent: 20px;
+}
+input {
+    font-size: .87rem;/*14px*/
 }

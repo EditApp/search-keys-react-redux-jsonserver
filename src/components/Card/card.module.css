@@ -1,6 +1,6 @@
 .card {
-    border: 1px solid #F0F0F0;
+    border: 1px solid #F5F5F5;
     padding: 20px;
-    -webkit-box-shadow: 0 15px 60px 0 #F5F5F5;
-    box-shadow: 0 15px 60px 0 #F5F5F5;
+    -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
 }

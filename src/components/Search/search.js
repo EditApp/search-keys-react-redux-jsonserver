@@ -7,14 +7,14 @@ import SearchButton from '../Buttonrect/button'
 
 const Search = (props) => {
     return (
-        <div className={styles.searchcontainer}>
+        <form role="search" className={styles.searchcontainer}>
             <label htmlFor="search">
                 <SearchButton>
                     <SearchIcon/>
                 </SearchButton>
             </label>
             <input className={styles.searchinput} id="search" placeholder={'Que cherchez-vous ?'} type="text" onChange={event => props.keywords(event)}/>
-        </div>
+        </form>
     )
 }
 

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding-top: 60px;
 }
 
 article {
@@ -17,23 +18,23 @@ article div[class*="card_"]  {
 }
 
 @media all and (min-width: 481px) and  (max-width: 768px){
-  article div[class*="card_"] {
-      flex: 47.8%;
-      -ms-flex: 47.8%;
-      justify-content: space-between;
-  }
   .article {
-   display: flex;
+    display: flex;
+   }
+  article div[class*="card_"] {
+    flex: 47.8%;
+    -ms-flex: 47.8%;
+    justify-content: space-between;
   }
 }
 
 @media all and (max-width: 480px){
+  .article {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+   }
   article div[class*="card_"] {
     flex: 100%;
-  }
-  .article {
-   display: flex;
-   flex-direction: column;
-   -ms-flex-direction: column;
   }
 }
